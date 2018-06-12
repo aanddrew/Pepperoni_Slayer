@@ -6,6 +6,11 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+/**
+ * The upgraded starting pistol for the player.
+ * It has 2 more shots, 20% reload time reduction, and does double the damage.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class WaterPistolMk2 extends Gun
 {
 	public static final String NAME = "Water Pistol Mark 2";

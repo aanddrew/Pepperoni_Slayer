@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+/**
+ * The basic starting pistol for the player.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class WaterPistolMk1 extends Gun
 {
 	public static final String NAME = "Water Pistol Mark 1";

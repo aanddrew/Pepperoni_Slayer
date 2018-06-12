@@ -2,6 +2,12 @@ import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * This is a map object. The only one that I have made.
+ * It is basically just a big ArrayList of quads, floors, walls, gunholders, and enemy spawners.
+ * This map is loaded into the player object where the objects are used for player collision, and rendered via the camera class, which Player extends.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class FirstMap implements Map 
 {
 	private ArrayList<Quad> quads;

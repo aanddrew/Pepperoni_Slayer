@@ -1,6 +1,12 @@
 import java.awt.Color;
 import java.util.ArrayList;
 
+/**
+ * This is the original framework I used to test the 3d projection system I had created.
+ * It was just 8 points that were floating in the middle of the screen.
+ * It no longer works as I have not expanded it to the traditional map structure I created.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class CubeMap implements Map 
 {
 	public CubeMap()

@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+/**
+ * Another gun, this one fires slower than the AutoBlaster 6000, but does 3 damage instead of one.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class MegaSoaker80k extends Gun 
 {
 	public static final int PRICE =7000;

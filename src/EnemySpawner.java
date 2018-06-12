@@ -1,4 +1,8 @@
 
+/**
+ * An imaginary object that spawns an enemy at a random spot within SPAWN_VARIANCE units of the location.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class EnemySpawner implements Object3D
 {
 	public static final int SPAWN_VARIANCE = 700;

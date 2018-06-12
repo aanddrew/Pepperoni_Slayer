@@ -2,12 +2,26 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
 
+/**
+ * This is probably the most important class in here. I'm very proud of it.
+ * This class is responsible for the projection of 3d points to 2d. I did not use any specific method as I was simply going off my intuition of how eyes and perspective work.
+ * Actually, this project was initially called perspective as I was originally just trying to make 2d projections of 3d objects. It turned into a game when I realized how 
+ * painfully boring that was on its own. As I would be presenting this to my class and they would be way more impressed by me playing a first-person-shooter than showing them
+ * a bunch of trig functions and how they can draw dots on the screen. But I digress.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Point3D implements Object3D
 {
 	private double x;
 	private double y;
 	private double z;
 	
+	/**
+	 * Constructs a point with x, y, z coords.
+	 * @param xIn
+	 * @param yIn
+	 * @param zIn
+	 */
 	public Point3D(double xIn, double yIn, double zIn)
 	{
 		x = xIn;
@@ -24,9 +38,11 @@ public class Point3D implements Object3D
 	public void setZ3D(double zIn) {z = zIn;}
 	
 	/**
-	 * Gets the 2D coordinates of this point being projected onto a JComponent Camera
+	 * Converts this 3d point into a 2d projection for a camera class to display.
+	 * Gets the 2D coordinates of this point being projected onto a JComponent Camera.
+	 * I will go over more about how this works in a youtube video explaining the project.
 	 * @param camera The camera that is viewing this point.
-	 * @return
+	 * @return the 2d projection of this point onto the camera. Returns null if the point is behind the camera's FOV.
 	 */
 	public Point getProjection(Camera camera)
 	{

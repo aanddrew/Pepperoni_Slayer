@@ -12,6 +12,11 @@ import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+/**
+ * The game object, this initializes the parameters for the game.
+ * If you would like to change the starting round to round n, simply change the line: "round = new Round(0, this);" to "round = new Round(n, this);"
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Game 
 {
 	public static final String TITLE = "Pepperoni Slayer";

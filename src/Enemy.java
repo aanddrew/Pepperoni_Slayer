@@ -3,6 +3,11 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.geom.Point2D;
 
+/**
+ * An enemy, which is actually just a big floating red circle. This is the inspiration for the name of this project, "pepperoni slayer".
+ * You will no longer be able to unsee that.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Enemy implements Object3D, Renderable
 {
 	public static final int START_CASH_VALUE = 15;
@@ -29,6 +34,11 @@ public class Enemy implements Object3D, Renderable
 		radius = STARTING_RADIUS;
 	}
 	
+	/**
+	 * The enemy will chase the player by taking a direct path, ignoring obstacles.
+	 * This is the only kind of enemy pathing that I was willing to put into my project.
+	 * @param player The player to be chased.
+	 */
 	public void chasePlayer(Player player)
 	{
 		double xDiff = player.getX3D() - this.getX3D();

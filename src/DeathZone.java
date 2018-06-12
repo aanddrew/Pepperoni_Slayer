@@ -1,5 +1,9 @@
 import java.awt.Color;
 
+/**
+ * The large orange square at the bottom of the map that the game checks to see if you die on.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class DeathZone extends Floor 
 {
 	public DeathZone(Point3D topCornerIn, int widthIn, int heightIn)

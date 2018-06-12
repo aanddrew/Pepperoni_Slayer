@@ -2,6 +2,21 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 
+/**
+ * A quad which can be drawn by a Camera class.
+ * The quad contains more than 4 points, it looks like this:
+ * * * * * * * * * * 
+ * *               *
+ * *               *
+ * *               *
+ * *               *
+ * *               *
+ * *               *
+ * * * * * * * * * *
+ * because points behind the viewer are returned as null, so this actually just draws the points that are in front and constructs a polygon with them. 
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ *
+ */
 public class Quad implements Object3D, Renderable
 {
 	public static final int POINT_DIST = 20;

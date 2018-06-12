@@ -1,6 +1,10 @@
 import java.awt.Color;
 import java.awt.Rectangle;
 
+/**
+ * A floor is a quad that lies on the ground only and can detect whether a player is in collision with it.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Floor extends Quad 
 {
 	public Floor(Point3D topCornerIn, int widthIn, int heightIn, Color colorIn)

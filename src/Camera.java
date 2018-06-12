@@ -11,6 +11,11 @@ import java.util.Comparator;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
+/**
+ * This is a camera that takes in a bunch of "Renderable" objects and paints them onto the screen.
+ * There is no actual 3d projection being done in this class. That is done in the Point3D class.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Camera extends JComponent implements Object3D
 {
 	private Point3D location;

@@ -2,6 +2,10 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.util.ArrayList;
 
+/**
+ * A gun class that has basic gun properties.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public abstract class Gun 
 {
 	private Image image;

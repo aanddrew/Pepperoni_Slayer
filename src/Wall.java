@@ -1,6 +1,14 @@
 import java.awt.Color;
 import java.awt.Rectangle;
 
+/**
+ * A wall is a quad that stands up straight and can detect when a player collides with it.
+ * The hitbox is not a rectangular prism, but rather a shape that looks like this:
+ * o--------o
+ * Initially the player was able to get stuck inside the wall by approaching from the side, but the circles at the ends of the wall prevent them from getting in there.
+ * The wall also contains a floor at the top of it that prevents the player from walking on the inside of it.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Wall extends Quad
 {
 	public static int WALL_THICKNESS = 50;

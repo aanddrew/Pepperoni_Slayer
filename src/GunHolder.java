@@ -2,6 +2,11 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
 
+/**
+ * Similar to the enemy spawner class, but not quite.
+ * It is a shop for the player to purchase guns at, the paint method draws a blue circle with the gun's name and price in front of it.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class GunHolder implements Renderable
 {
 	public static final int RADIUS = 100;
@@ -44,6 +49,7 @@ public class GunHolder implements Renderable
 			g2d.setColor(BACK_COLOR);
 			g2d.fillOval(x, y, effectiveRadius, effectiveRadius);
 			
+			//TRYING TO SHOW A PICTURE OF THE GUN IN FRONT OF THE BLUE CIRCLE, BUT IT WAS TOO LAGGY
 			if (gun != null)
 			{
 //				if (Math.random()<0.05)
