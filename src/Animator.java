@@ -14,6 +14,10 @@ import javax.imageio.ImageIO;
 
 import com.sun.prism.Graphics;
 
+/**
+ * This class is responsible for drawing all the hud to the player JComponent object
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class Animator
 {
 	private Player player;
@@ -128,16 +132,6 @@ public class Animator
 			
 		}
 	}
-	
-//	public void drawOuchAnimation()
-//	{
-//		while (ouchCounter < OUCH_LENGTH)
-//		{
-//			player.getG2d().setColor(new Color(255,0,0,60));
-//			player.getG2d().fillRect(0, 0, player.getWidth(), player.getHeight());
-//			ouchCounter++;
-//		}
-//	}
 	
 	public void drawRoundTitle()
 	{

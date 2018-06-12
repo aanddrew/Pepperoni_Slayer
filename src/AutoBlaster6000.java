@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+/**
+ * This is a machine gun that I made as a sub-class to the Gun Class.
+ * @author Andrew Weller andrewweller.cs@gmail.com
+ */
 public class AutoBlaster6000 extends Gun 
 {
 	public static final int PRICE =10000;
@@ -27,11 +31,13 @@ public class AutoBlaster6000 extends Gun
 	
 	private ArrayList<BulletTrail> bulletTrails;
 	
+	//there are two constructors because one is used for the gunHolder class where there is no player to assign the gun to.
 	public AutoBlaster6000() throws IOException
 	{
 		super(MAG_SIZE, RELOAD_TIME, PRICE, null);
 		setImage(GUN_STILL_IMAGE);
 		
+		//this gun has a special gun animation that can be expanded to more than two pictures, but it looks good enough to me.
 		gunAnimation = new ArrayList<Image>();
 		gunAnimation.add(GUN_STILL_IMAGE);
 		gunAnimation.add(ImageIO.read(new File("AutoBlaster6000_1.png")));

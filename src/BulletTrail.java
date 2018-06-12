@@ -15,14 +15,18 @@ public class BulletTrail
 	
 	public static final int POINT_DIST = 100;
 	
+	/**
+	 * A bullet trail that is actually just an array of 3d points that a line is drawn through.
+	 * @param originIn starting point
+	 * @param yAngleIn the angle that the trail faces on the y (vertical axis)
+	 * @param vertAngleIn the angle of attack of the angle
+	 */
 	public BulletTrail(Point3D originIn, double yAngleIn, double vertAngleIn)
 	{
 		origin = originIn;
 		yAngle = yAngleIn;
 		vertAngle = vertAngleIn;
 		color = STARTING_COLOR;
-		
-		
 		
 		points = new Point3D[20];
 		for (int i = 2; i < points.length; i++)
@@ -59,8 +63,6 @@ public class BulletTrail
 						  (int)getPoints()[i].getProjection(camera).getY(), 
 						  (int)getPoints()[i+1].getProjection(camera).getX(), 
 						  (int)getPoints()[i+1].getProjection(camera).getY());
-//				g2d.fillOval((int)getPoints()[i].getProjection(camera).getX(), 
-//						(int)getPoints()[i].getProjection(camera).getY(), 5, 5);
 			}
 			catch (NullPointerException e)
 			{
